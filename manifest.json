@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Download Organizer",
+    "description": "Organize your download folder automatically",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html"
+        //"default_icon": "icon.png"
+    },
+    "background": {
+        "service_worker": "/scripts/main.js"
+      },
+
+    "permissions":["downloads", "webRequest"],
+    "host_permissions": [
+        "*://*/*"
+      ]
+}
